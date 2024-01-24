@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -44,5 +46,18 @@ public class Main {
         //Bonus
         //Implement a program that reads a text from the console and then outputs the letters individually. Tip: Learn about the Scanner class.
 
+        scanInputAsString();
+    }
+
+    public static void scanInputAsString(){
+        System.out.println("Scanning Input (enter 'q' to exit programm):");
+        Scanner scanner = new Scanner(System.in);
+        while (true){
+            String s = scanner.next();
+            if(s.equals("q")) break;
+            System.out.println(s);
+        }
+        System.out.println("Bye...");
+        scanner.close();
     }
 }
