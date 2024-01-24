@@ -54,8 +54,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true){
             String s = scanner.next();
+            char[] word = s.toCharArray();
+            for(char element : word){
+                System.out.println(element);
+            }
             if(s.equals("q")) break;
-            System.out.println(s);
+            //System.out.println(s);
         }
         System.out.println("Bye...");
         scanner.close();
