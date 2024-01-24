@@ -60,6 +60,12 @@ public class Main {
             }
             if(s.equals("q")) break;
             //System.out.println(s);
+            /*  alternative Lösung
+            for(int i = 0; i < s.length(); i++)
+                System.out.println(s.charAt(i));
+
+             */
+
         }
         System.out.println("Bye...");
         scanner.close();
